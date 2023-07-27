@@ -1,0 +1,239 @@
+@import '../global-variables'
+#single-post     
+    padding-top 300px  
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+        text-align left
+        padding-top 195px
+    .intro 
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+            padding-top 42px
+
+    .title-large 
+        font-size 44px 
+        line-height 50.6px  
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) 
+            font-size 25px
+            line-height 29.3572px
+    .line-intro 
+        .image-destaque-large 
+            width 100% 
+            height auto 
+            margin-bottom 40px
+        .bg-top 
+            position absolute
+            top -120px
+            right 0
+            width 633px
+            z-index -1  
+        
+    .helper-header 
+        border-bottom 1px solid #d1d0d7
+        background-color #fff
+        position fixed
+        top 89px
+        width 100%
+        left 0
+        z-index 19
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+            top 85px
+
+        p 
+            font-size 14px 
+            color primaryColor 
+            margin-top 14px
+            span 
+                color secondaryColor  
+        #progress-bar 
+            background: linear-gradient(90deg,#1b1437,#b06eab);
+            height: 5px;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            transition: all .35s ease-in-out;
+            width 0%
+    .author-widget 
+        text-align center 
+        .author-picture 
+            border-radius 50%
+            width 60px
+            height 60px
+            object-fit cover 
+        .author-info 
+            display flex
+            flex-flow column wrap
+            height 95% 
+            .autor-name 
+                color secondaryColor !important
+                line-height 8px 
+                font-weight weight-strong  
+            .data
+                margin-top -7px
+        .social 
+            display: flex
+            align-items center
+            justify-content center
+            margin-top -10px
+
+            .social-icon.facebook
+                background-color #42579c 
+            .social-icon
+                height 32px
+                width 32px
+                border-radius 50%
+                position relative
+                transition all .35s ease-in-out 
+                i 
+
+                    color #fff
+                    position absolute
+                    left 0
+                    right 0
+                    margin auto
+                    top: 50%
+                    transform: translateY(-50%)
+                    font-size 17px
+
+        .social-icon.instagram 
+            background linear-gradient(45deg,#f09433,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888)
+        .social-icon.linkedin 
+            background-color #3579ba
+        
+        .social-icon+.social-icon 
+            margin-left 7px 
+    
+    .container-content
+        margin-top 30px 
+        .content
+            img 
+                width 100%   
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+                    height auto 
+                    margin-bottom 0px !important
+            h2, h3, h4, h5, h6 
+                font-size 23.6666px 
+                font-weight weight-strong 
+                color primaryColor  
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+                    font-size 19.6666px
+            h3, h4, h5, h6  
+                font-size 18.72px
+            a 
+                color secondaryColor !important  
+                font-weight weight-strong  
+            li
+                &:before 
+                    content "•"
+                    color secondaryColor
+                    margin-right 5px  
+            ul 
+                list-style none 
+                padding 0
+
+            strong 
+                color secondaryGray 
+            img 
+                margin-bottom 20px 
+            .sugeridos 
+                padding 32px 42px
+                background-color #f1f2f2  
+                margin-bottom 20px
+                h3 
+                    margin-bottom 25px
+                    font-size 24px 
+                ul 
+                    list-style none 
+                    padding 0px
+                    margin 0
+                li 
+                    line-height 28px
+                    font-size 16px
+                    transition all .35s ease-in-out  
+                    list-style none
+                    &:before 
+                        content "•"
+                        color secondaryColor
+                        margin-right 5px 
+                    ul 
+                        list-style none
+
+        .sidebar-left 
+            
+
+            .wrap-sticky 
+                width 100%
+                max-width 195px
+                border 1px solid #e8e7eb
+                padding 20px 13px
+                position -webkit-sticky
+                position sticky
+                top 160px
+                margin 30px auto 0  
+                text-align left
+                .title 
+                    color primaryColor 
+                    font-weight weight-strong
+              
+             
+        .sidebar-right
+            .list-wrapper 
+                padding-left 18px
+                padding-right 18px
+                padding-bottom 20px
+                border 1px solid #e8e7eb
+                border-top 0  
+                margin-bottom 30px 
+                margin-top 30px
+                .title 
+                    padding 17px 21px
+                    background-color #1b1437
+                    width calc(100% + 36px)
+                    margin-left -18px 
+                    text-align center 
+                    font-weight weight-strong 
+                    color secondaryColor  
+            .top-sidebar-banner-wrapper 
+                img
+                    width 309px
+
+               
+        .list-dotted 
+            list-style none 
+            padding 0 
+            li
+                padding-top 9px
+                padding-bottom 9px
+                transition all .35s ease-in-out
+                line-height 18.4px 
+                &:before 
+                    content "•"
+                    color secondaryColor
+                    margin-right 5px
+                a 
+                    color primaryColor 
+                    font-weight weight-strong  
+                    text-decoration underline
+                    
+        .list-dotted.with-borders li+li 
+            border-top 1px solid #e8e7eb 
+
+    .line-intro-relacionados
+        margin-top 40px  
+        .author-widget
+            margin-bottom 44px
+
+    .line-relacionados 
+        margin-top 37px  
+    
+    .line-outher-posts 
+        a 
+            color secondaryColor 
+            font-weight weight-strong  
+
+            span 
+                color primaryColor 
+                text-decoration underline !important;
+            i 
+                primaryColor
+
+
+

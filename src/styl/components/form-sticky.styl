@@ -1,0 +1,53 @@
+.form-sticky
+    background-color primaryColor 
+    height 552px 
+    width 556px 
+    position sticky
+    top 125px 
+    padding-left 34px 
+    padding-top 21px
+    padding-right 34px 
+    padding-bottom 29px  
+    filter drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.16))
+    border-radius 6px
+
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+        width 100% 
+        padding-top 34px
+        margin-top 43px
+    .title 
+        color branco 
+        font-size 35px  
+        @media screen and (min-width: desktop-min) 
+            line-height 57px 
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+            font-size 22px 
+            font-weight weight-strong 
+            br 
+                display none
+        span 
+            color secundaryColor 
+            font-size 56px 
+            font-weight weight-strong  
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+                font-size 22px
+    p 
+        color branco 
+        max-width 343px 
+    form 
+        div  
+            @media screen and (min-width: desktop-min) 
+                margin 0  
+                margin-bottom 5px  !important
+                gap 9px
+        input, select   
+            height 40px !important 
+        textarea 
+            height 108px !important 
+        .label-icon 
+            margin-top 7px  
+        
+        .button 
+            width 100% 
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+                margin-top 14px

@@ -1,0 +1,275 @@
+@import './global-variables'
+@import './typography'
+
+
+body 
+  overflow-x hidden !important
+  max-width max-layout
+  margin 0 auto 
+  background-color #F7F7F7
+
+
+.grecaptcha-badge
+    z-index 9999 !important
+/* width */
+::-webkit-scrollbar {
+  width: 9px;  
+  border-radius 10px
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: lightGray; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background primaryColor
+  border-radius 10px
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+html 
+  scroll-behavior: smooth; 
+
+.container 
+    max-width grid-container-desktop
+
+a 
+    text-decoration none !important 
+    &:hover 
+        color secondaryColor
+        transition 1s  
+        i  
+            color secondaryColor
+            transition 1s   
+.searchwp-live-search-result 
+  a 
+    color primaryColor    
+
+.button 
+  width 180px 
+  height 45px 
+  display flex 
+  justify-content center 
+  align-items center 
+  color branco 
+  font-weight weight-strong
+  border-radius 6px 
+  border none
+  /* Small only */
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) 
+    margin 0 auto  
+    width 88%
+  * 
+    color branco 
+  i 
+    margin-right 8px 
+    font-size 20px  
+  &:hover 
+    color branco  
+    background-color linear-gradient(#26b282 0%,#1ec38b 100%);
+    * 
+      color branco 
+.button-whatsapp 
+  background linear-gradient(#3add8c 16.44%, #27be98 85.02%)
+  &:hover 
+    background linear-gradient(#29c490 0%,#1ec38b 100%); 
+
+.button-green
+  background-color secundaryColor  
+  i 
+    font-size 10px 
+    margin-left 20px
+.button-saiba-mais.white  
+  background branco 
+  color primaryGrayColor 
+
+.button-transparent-blue 
+  background transparent
+  border 1px solid primaryColor 
+  color primaryColor 
+  &:hover 
+    color branco 
+    background-color primaryColor
+
+.button-flex 
+  gap 24px
+  display flex
+  /* Small only */
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) 
+    flex-direction column
+    justify-content center
+    align-items center 
+    gap 15px 
+    margin-top 18px
+
+#breadcrumb 
+  /* Large and up */
+  @media screen and (min-width: desktop-min)  
+    margin-bottom 41px 
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+    text-align left
+    padding-left 25px 
+    margin-bottom 31px
+  a 
+    color primaryTextColor 
+  .breadcrumb_last 
+    color secundaryColor
+  * 
+    font-weight weight-strong 
+    text-transform uppercase
+
+input, textarea, select 
+  border-radius 0px !important  
+  margin-bottom 10px
+  border 1px solid #C8C8C8 !important
+  border-radius 3px  !important
+  color primaryTextColor !important
+  padding-left 34px !important 
+  margin 0
+input, select 
+  height 50px !important   
+  // margin-right 10px
+select 
+  padding-left 8px 
+textarea 
+  width 100% 
+  height 91px 
+  padding-left 8px   
+  padding-top 17px !important 
+
+form 
+  position relative
+  div 
+    /* Large and up */
+    @media screen and (min-width: desktop-min)  
+      margin 4px 
+      padding 0 !important
+
+  label
+    position absolute
+    margin-top 13px
+    @media screen and (min-width: desktop-min) 
+      margin-left 12px 
+    /* Small only */
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+      left 12px
+  input, select textarea  
+    /* Small only */
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+      margin-bottom 9px
+
+.strong 
+  font-weight weight-strong !important 
+
+.margin-0-auto 
+  margin 0  auto 
+.p-centered 
+  max-width 731px   
+.line-centered 
+  align-items center
+.splide__pagination__page.is-active
+  background-color primaryColor !important   
+  transform scale(1.1) !important
+.splide__pagination__page
+  background-color #7CA0BC !important 
+
+.splide__pagination__page
+  height 13px !important
+  width 13px !important
+  opacity inherit !important
+
+.splide__arrows 
+  .splide__arrow 
+    background secundaryColor
+    opacity inherit 
+    color branco 
+    svg 
+      fill #fff
+  .splide__arrow[disabled]
+    background #ACACAC  
+.bg-light-blue 
+  background-color lightBlue  
+.redes-social-icon 
+  background-color secundaryColor 
+  color branco 
+  padding 5px
+/* Small only */
+@media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+
+    .grecaptcha-badge 
+        bottom 76px !important
+    body 
+        text-align center 
+    .container 
+        max-width grid-container-mobile  !important     
+    
+    .img-mob-fluid
+      margin-top 23px 
+      margin-bottom 23px 
+    .card-none 
+      display none !important 
+    
+    .splide__arrow--prev
+      left 38%  !important
+    .splide__arrow--next 
+      right 38% !important  
+    .splide__arrows 
+      position relative
+      .splide__arrow 
+        svg 
+          fill primaryColor 
+    #iframe-sz-chat 
+      bottom 77px !important
+    
+
+/* Large and up */
+@media screen and (min-width: desktop-min) 
+  .splide__arrows 
+    position absolute
+    right 65px
+    margin-top -9px
+    .splide__arrow--prev 
+      margin-left -51px
+      right -14px !important
+      left inherit
+    .splide__arrow--next 
+      margin-right -67px  
+    
+/* Medium and up */
+@media screen and (min-width: tablet-min) {}
+
+//components
+@import './includes/header'
+@import './includes/footer'
+@import './components/card-one'
+@import './components/card-normas'
+@import './components/form-sticky'
+@import './components/galeria'
+
+
+
+
+// global sections
+@import './globals-sections/politica-de-qualidade'
+@import './globals-sections/download-catalogo'
+@import './globals-sections/nossos-produtos'
+@import './globals-sections/cartao-bndes'
+@import './globals-sections/section-contact'
+
+
+
+
+
+
+
+     
+
+
+

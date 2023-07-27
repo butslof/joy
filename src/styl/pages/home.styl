@@ -1,0 +1,394 @@
+@import '../global-variables'
+
+#home 
+    #banner-top 
+        .banner-1
+            /* Large and up */
+            @media screen and (min-width: desktop-min) 
+                background url('../../imgs/banner/banner-1.jpg')    
+            /* Small only */
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+                background url('../../imgs/banner/banner-1-mob.jpg')
+        .banner-2
+            /* Large and up */
+            @media screen and (min-width: desktop-min) 
+                background url('../../imgs/banner/banner-2.jpg')    
+            /* Small only */
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+                background url('../../imgs/banner/banner-2-mob.jpg')
+        .banner-3
+            /* Large and up */
+            @media screen and (min-width: desktop-min) 
+                background url('../../imgs/banner/banner-3.jpg')    
+            /* Small only */
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+                background url('../../imgs/banner/banner-3-mob.jpg')
+        .banner-4
+            /* Large and up */
+            @media screen and (min-width: desktop-min) 
+                background url('../../imgs/banner/banner-4.jpg')    
+            /* Small only */
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+                background url('../../imgs/banner/banner-4-mob.jpg')
+    
+        .banners 
+            background-size cover 
+            background-position center 
+            background-repeat no-repeat   
+             /* Large and up */
+            @media screen and (min-width: desktop-min) 
+                height 500px 
+            /* Small only */
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                padding-top 27px
+                height 431px  
+                br 
+                    display none  
+            .col-text 
+                /* Large and up */
+                @media screen and (min-width: desktop-min) 
+                    padding-top 108px  
+                    padding-left 61px
+                .title 
+                    font-size 45px 
+                    color branco 
+                    font-weight weight-strong 
+                    line-height 50px  
+                    margin-bottom 20px  
+                    max-width 600px 
+                    /* Small only */
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                        font-size 22px 
+                        line-height 30px 
+                        margin-bottom 11px
+                p 
+                    color branco  
+                    font-size 18px  
+                    max-width 483px 
+                    /* Small only */
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                        font-size 14px
+                    *
+                        color branco 
+                        font-size 18px   
+                        /* Small only */
+                        @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                            font-size 14px
+                .button     
+                    margin-top 28px 
+                    /* Small only */
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+                        margin-top 12px
+        .splide__pagination__page.is-active
+            background-color secundaryColor !important   
+            @media screen and (min-width: desktop-min) 
+                height 40px !important
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                width 39px !important
+        .splide__pagination__page
+            background-color branco !important 
+            height 20px !important
+            width 6px !important 
+            border-radius 3px !important 
+            margin-bottom 11px    
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                height 8px !important
+                width 35px !important
+        .splide__pagination 
+            @media screen and (min-width: desktop-min) 
+                bottom 2.5em 
+                flex-direction column 
+                margin-left -1155px
+                margin-top -32px
+                top 24px
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+               bottom 70px
+    .container-cards-top 
+        @media screen and (min-width: desktop-min) 
+            margin-top -30px !important
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+            max-width 100% !important
+       
+        .splide-cards-top
+            .splide__track 
+                margin-top -44px  
+                padding-left: 35px !important 
+                padding-bottom 76px
+            .splide__slide 
+                width 201px !important  
+            .splide__arrows 
+                /* Small only */
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                    bottom -154px
+                    max-width 320px
+                    margin 0 auto
+        .boxes-intro-top 
+            /* Large and up */
+            @media screen and (min-width: desktop-min) 
+                display flex 
+                justify-content center 
+            .box
+                width 201px
+                height 153px
+                background #fff
+                // border 1px solid #ccc
+                filter drop-shadow(0px 3px 33px rgba(0, 0, 0, 0.16))  
+                padding-top 22px 
+                text-align center 
+                padding-left 29px 
+                padding-right 29px
+                .title 
+                    font-size 15px 
+                    color primaryColor 
+                    font-weight weight-strong  
+                    text-transform uppercase
+                p 
+                    font-size 13px  
+                    line-height 20px
+                img 
+                    margin-bottom 9px 
+    #sobre
+        // margin-top 59px 
+        margin-bottom 59px
+        /* Small only */
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+            margin-top 47px 
+            margin-bottom 47px
+        .col-img 
+            position relative
+            .img-dest
+                /* Large and up */
+                @media screen and (min-width: desktop-min) 
+                    margin-left -381px  
+            .selo 
+                position absolute
+                right -33px
+                margin-top 39px
+            .selo-2 
+                position absolute 
+                right 36px
+                margin-top 257px
+        .col-text 
+            /* Large and up */
+            @media screen and (min-width: desktop-min) 
+                padding-left 24px
+                padding-right 117px 
+            p 
+                margin-bottom 31px
+            .link 
+                color secundaryColor 
+                font-weight weight-medium 
+                i 
+                    color secundaryColor 
+                    margin-right 8px    
+            .img-dest
+                /* Small only */
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+                    width 100% 
+                    min-height 203px 
+                    object-fit cover 
+                    margin-top -57px
+                    margin-bottom 24px 
+                    border-radius 10px 
+            .box-selos 
+                display flex  
+                position relative
+                justify-content center
+                img
+                    object-fit contain 
+                .selo 
+                    width 107px  
+                    margin-left -16px
+                .selo-2 
+                    width 56px
+                
+    #section-conheca-nossas-normas  
+        padding-bottom 70px
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) 
+            padding-bottom 55px
+        .line-cards
+            padding-top 20px  
+            margin-bottom 30px
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+                margin-bottom 10px
+        .button 
+            margin 0 auto
+            i
+                font-size 10px
+                margin-left 11px   
+    #section-depoimentos  
+        padding-bottom 57px 
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+            padding-bottom 39px
+        .splide__track 
+            padding-top 28px
+            padding-bottom 70px 
+        .splide__slide 
+            margin-left 15px 
+            margin-right -11px 
+        .splide__arrows  
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                bottom -408px
+        .line-cards 
+            margin-top 16px
+            .card
+                width 357px
+                height 320px
+                border-radius 6px
+                background branco
+                border 1px solid #ccc
+                box-shadow 0px 3px 20px rgba(0, 0, 0, 0.16) 
+                padding-left 29px 
+                padding-right 29px  
+                padding-top 56px 
+                position relative 
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                    width 265px 
+                    text-align left 
+                    height auto 
+                    padding-bottom 31px 
+                    min-height 333px  
+                    margin-left 14px 
+            
+                .logo-google 
+                    width 71px 
+                    position absolute
+                    top -32px
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                        margin-left 64px
+                .title 
+                    font-size 20px 
+                    font-weight weight-medium 
+                    color #2E3748 
+                    display block 
+                    margin-bottom 18px 
+                p 
+                    font-size 16px 
+                    height 96px
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                        height auto
+                .stars
+                    i 
+                        color #FBBC05 
+                .name 
+                    font-size 15px 
+                    color primaryColor 
+                    font-weight weight-medium 
+                .local 
+                    font-size 13px 
+                    color #959595 
+                    display block
+                    margin-top -6px
+    #section-list-blog 
+        background-color primaryColor  
+        height 915px
+        padding-top 79px 
+        padding-bottom 66px  
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+            padding-top 44px 
+            height auto 
+            padding-bottom 40px
+        .line-intro
+            * 
+                color branco 
+            p   
+                max-width 473px
+                margin 0 auto 
+        .line-cards 
+            margin-top 28px
+            .box-card 
+                border-radius 6px
+                background-color branco 
+                margin 0 auto
+                margin-bottom 36px 
+                @media screen and (min-width: desktop-min)  
+                    display flex  
+                    width 555px
+                    height 250px 
+                    align-items center   
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                    width 290px 
+                    min-height 433px 
+                    height auto 
+                    padding-bottom 28px 
+                    margin-bottom 20px
+                img 
+                    object-fit cover 
+                    @media screen and (min-width: desktop-min)   
+                        width 210px 
+                        height 250px 
+                        border-radius 6px 0px 0px 6px 
+                        padding-right 19px   
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+                        width 100% 
+                        height 156px 
+                        border-radius 6px 6px 0px 0px
+                        margin-bottom 16px
+                .content 
+                    padding-right 19px
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                        padding-left 19px 
+                        text-align left
+                    .title 
+                        font-size 22px 
+                        color primaryColor 
+                        font-weight weight-strong 
+                        @media screen and (min-width: mobile-min) and (max-width: tablet-max)   
+                            font-size 18px
+                    p 
+                        font-size 13px  
+                        @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+                            font-size 14px
+                    .date 
+                        color primaryColor 
+                        font-size 12px 
+                        font-weight weight-strong
+                        i 
+                            color primaryColor
+                            font-size 12px 
+                    .link 
+                        color secundaryColor 
+                        font-size 13px 
+                        font-weight weight-strong 
+                        text-decoration underline 
+        .button 
+            margin 0 auto 
+            margin-top 24px 
+    
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+                    
+
+
+
+    
+       
+
+        
+        
+
+
+                
+
+
+
+   
+    
+
+
+
+
+                

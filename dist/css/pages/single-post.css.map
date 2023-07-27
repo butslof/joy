@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/single-post.styl"],"names":[],"mappings":"AAGsC,mCAE9B,yBACI,cAAc","file":"single-post.css","sourcesContent":["#single-post \r\n\r\n    /* Large and up */\r\n    @media screen and (min-width: 64em)\r\n\r\n        .col-banner \r\n            padding-right 0px !important"]}

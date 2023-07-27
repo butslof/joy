@@ -1,0 +1,51 @@
+#section-download-catalogo 
+    background-color primaryColor 
+    height 300px 
+    margin-bottom 89px  
+    /* Small only */
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+        height 690px
+        padding-top 46px 
+        margin-bottom 58px
+    .col-catalogo 
+        position relative 
+        img 
+            position absolute 
+            left 0 
+            margin-top -46px 
+    .col-text 
+        /* Large and up */
+        @media screen and (min-width: desktop-min) 
+            padding-left 101px
+            padding-top 63px 
+            padding-right 20px 
+        img 
+            /* Small only */
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max)    
+                width 157px 
+                margin-bottom 7px
+        .title 
+            font-size 38px 
+            color branco 
+            font-weight weight-strong 
+            /* Small only */
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) 
+                font-size 22px 
+                margin-bottom 18px
+        p 
+            font-size 15px  
+            color branco
+    .col-formulario  
+        /* Large and up */
+        @media screen and (min-width: desktop-min)
+            padding-top 63px 
+            margin-left -8px                 
+        /* Small only */
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max)  
+            position relative
+        .button   
+            width 100%
+            /* Large and up */
+            @media screen and (min-width: desktop-min)
+                width 102.6%
+                margin-left -6px
